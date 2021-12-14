@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 30px;
+  color: #000;
+  background-color: #fff;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1d2b;
+  color: #fff;
+  border-radius: 25px;
+  padding: 5%;
+  margin: 5%;
+
+  width: 20vw;
+}
+
+section article div {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+section article div input {
+  font-size: 16px;
+
+  height: 45px;
+  width: 30%;
+
+  padding: 5px;
+  margin: 10px;
+
+  border-radius: 10px;
+  border-width: 0px;
+
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+}
+
+section article div button {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+
+  height: 45px;
+  width: 40%;
+
+  margin: 10px;
+  padding: 5px;
+
+  border-radius: 30px;
+  border-width: 0px;
+
+  background: #00f260; /* fallback for old browsers */
+  background: -webkit-radial-gradient(
+    #8023ac,
+    #6f69e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(
+    #8023ac,
+    #6f69e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-color: #1f1d2b;
+}
+
+section article div button:disabled {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+
+  height: 45px;
+  width: 40%;
+
+  margin: 10px;
+  padding: 5px;
+
+  border-radius: 30px;
+  border-width: 0px;
+
+  background: #34333a;
+  border-color: #1f1d2b;
+}
+
+section article h5 {
+  text-align: center;
+  font-weight: bold;
+}
