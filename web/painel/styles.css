@@ -91,7 +91,6 @@ main {
 
   min-width: 70px;
 
-  transition: opacity 2s;
   opacity: 1;
 }
 
@@ -113,4 +112,5 @@ main {
 
   margin: 5px;
   border-radius: 20px;
+  transition: opacity 2s;
 }
