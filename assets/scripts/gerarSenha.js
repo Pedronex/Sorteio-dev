@@ -24,6 +24,8 @@ function armazenarSorteados() {
   }
   localStorage.setItem('participantes', shuffle(listaNumeros));
   document.getElementById('btnSortear').disabled = false
+
+  localStorage.setItem('apresentar', false)
   console.log('participantes criados 🚀')
 }
 
@@ -46,7 +48,7 @@ function sortear() {
 
   if (validacao(quantidade, listaParticipantes.length)) {
     for (i = quantidade; i--;) {
-      listaSorteados.push(listaParticipantes.pop());
+      listaSorteados.push({ numero: listaParticipantes.pop(), brinde: document.getElementById('brinde' + i).value });
     }
     const listaParticipantesAtualizado = shuffle(listaParticipantes);
 
@@ -65,18 +67,44 @@ function sortear() {
 
     localStorage.setItem('historico', JSON.stringify(listaHistoricos))
   }
+  localStorage.setItem('apresentar', false);
 
   this.updateInfoTransiction();
+
 }
 
 function updateInfoTransiction() {
   const historico = localStorage.getItem('historico') ? JSON.parse(localStorage.getItem('historico')) : [];
   let apresentação = ''
   historico.forEach(item => {
-    apresentação += `<p>Sorteados:\n${item.listaSorteados}</p><p styles="margin-bottom: 5px">Quantidade sorteada: ${item.quantidadeSorteada}</p>`
+    apresentação += `<p>Sorteados + brindes:\n${JSON.stringify(item.listaSorteados)}</p><p style="margin-bottom: 10px;">Quantidade sorteada: ${item.quantidadeSorteada}</p>`
   });
 
 
 
   document.getElementById('transacoes').innerHTML = apresentação
+}
+function qtdFields() {
+  const quantidade = Number(document.getElementById('qtdSortear').value);
+  document.getElementById('brindes').innerHTML = ''
+  for (i = quantidade; i--;) {
+    document.getElementById('brindes').innerHTML += `<article>
+          <div>
+            <h5>Nome do brinde N°${i + 1}</h5>
+            <input
+              type="text"
+              name="inputNumber"
+              id="brinde${i}"
+              placeholder="Nome do Brinde"
+            />
+          </div>
+        </article>
+        <article>
+          <div style="height: 1px; width: 100%; background-color: #ddd"></div>
+        </article>`
+  }
+}
+
+function mostrar() {
+  localStorage.setItem('apresentar', true);
 }

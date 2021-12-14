@@ -37,15 +37,26 @@
               id="qtdSortear"
               value="0"
               placeholder="Sorteados"
+              onchange="qtdFields()"
             />
           </div>
         </article>
         <article>
           <div style="height: 1px; width: 100%; background-color: #ddd"></div>
         </article>
+        <section
+          id="brindes"
+          style="width: 100%; padding: 0px; margin: 0px"
+        ></section>
+        <article>
+          <div style="height: 1px; width: 100%; background-color: #ddd"></div>
+        </article>
         <article>
           <div>
-            <button onclick="sortear()" id="btnSortear" style="width: 100vw">
+            <button onclick="mostrar()" id="btnSortear" style="width: 45vw">
+              mostrar
+            </button>
+            <button onclick="sortear()" id="btnSortear" style="width: 45vw">
               Sortear
             </button>
           </div>
