@@ -13,7 +13,7 @@ window.addEventListener("storage", function () {
     estrutura += '<article class="componente">';
     sorteados.forEach((item, index) => {
       estrutura += '<article class="conteudo">';
-      estrutura += `<span class="label" id="mostrarL">N°</span>`;
+      estrutura += `<span class="label" id="mostrarL">Número Sorteado</span>`;
       estrutura += `<span class="numero1" id="mostrarN">${
         item.brinde < 10 ? "0" + item.brinde : item.brinde
       }</span>`;
