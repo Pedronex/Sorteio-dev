@@ -105,17 +105,17 @@ function qtdFields() {
   for (i = quantidade; i--; ) {
     document.getElementById("brindes").innerHTML += `<article>
           <div>
-            <h5>Nome do brinde N°${i + 1}</h5>
+            <h5>Numero Sorteado</h5>
             <input
               type="text"
               name="inputNumber"
               id="brinde${i}"
-              placeholder="Nome do Brinde"
+              placeholder="Numero Sorteado"
             />
           </div>
         </article>
         <article>
-          <div style="height: 1px; width: 100%; background-color: #ddd"></div>
+          <div style="height: 1px; width: 100%; background-color: #fff"></div>
         </article>`;
   }
 }

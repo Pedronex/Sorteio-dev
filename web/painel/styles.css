@@ -6,7 +6,8 @@
 
 body {
   color: #000;
-  background-color: #fff;
+  background: url("../../assets/img/Natal-BG-Sorteio2.png");
+  background-size: cover;
 
   height: 100vh;
   width: 100vw;
@@ -35,19 +36,20 @@ section {
   flex-direction: column;
   background: -webkit-linear-gradient(
     to left,
-    #816bae,
-    #d4519c
+    #00763a,
+    #dec97b
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to left,
-    #816bae,
-    #d4519c
+    #00763a,
+    #dec97b
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   border-radius: 25px;
   padding: 1%;
 
   max-width: 94%;
+  width: 80%;
 }
 
 section article div {
@@ -70,6 +72,8 @@ main {
   align-items: center;
 
   flex-direction: column;
+
+  height: 100%;
 }
 
 .numero {
