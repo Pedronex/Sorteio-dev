@@ -13,7 +13,6 @@ window.addEventListener("storage", function () {
     estrutura += '<article class="componente">';
     sorteados.forEach((item, index) => {
       estrutura += '<article class="conteudo">';
-      estrutura += `<span class="numero">Parabéns</span>`;
       estrutura += `<span class="label" id="mostrarL">N°</span>`;
       estrutura += `<span class="numero1" id="mostrarN">${
         item.brinde < 10 ? "0" + item.brinde : item.brinde
@@ -47,7 +46,7 @@ window.addEventListener("storage", function () {
         .getElementsByClassName("numero1")
         .item(
           i
-        ).innerHTML = `<lottie-player src="${christmasBall}" background="transparent"  speed="1"  style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+        ).innerHTML = `<lottie-player src="${christmasBall}" background="transparent"  speed="2"  style="width: 150px; height: 150px;" loop autoplay></lottie-player>
 `;
     }
   }

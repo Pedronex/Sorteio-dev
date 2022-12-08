@@ -107,7 +107,7 @@ function qtdFields() {
           <div>
             <h5>Numero Sorteado</h5>
             <input
-              type="text"
+              type="number"
               name="inputNumber"
               id="brinde${i}"
               placeholder="Numero Sorteado"

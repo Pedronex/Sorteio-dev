@@ -49,7 +49,7 @@ section {
   padding: 1%;
 
   max-width: 94%;
-  width: 80%;
+  width: 50%;
 }
 
 section article div {
@@ -94,6 +94,11 @@ main {
   border-radius: 20px;
 
   min-width: 70px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  
 }
 
 .label {
@@ -144,14 +149,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
 
-  background-color: #ccc;
+  background-color: #fff;
 
   padding: 3px;
 
   margin: 5px;
   border-radius: 20px;
   transition: opacity 2s;
+  width: 100%;
 }
 
 @keyframes fadeIn {
