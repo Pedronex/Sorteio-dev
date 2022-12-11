@@ -33,7 +33,7 @@ header {
 
 section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: -webkit-linear-gradient(
     to left,
     #00763a,
@@ -49,7 +49,7 @@ section {
   padding: 1%;
 
   max-width: 94%;
-  width: 40%;
+  width: 60%;
 }
 
 section article div {
@@ -79,7 +79,7 @@ main {
 .numero {
   color: #000;
   text-align: center;
-  font-size: 5em;
+  font-size: 20px;
 
   border-radius: 20px;
 
@@ -89,7 +89,7 @@ main {
   color: #000;
   text-align: center;
 
-  font-size: 5em;
+  font-size: 16px;
 
   border-radius: 20px;
 
@@ -158,7 +158,7 @@ main {
   margin: 5px;
   border-radius: 20px;
   transition: opacity 2s;
-  width: 100%;
+  width: 45%;
 }
 
 @keyframes fadeIn {
