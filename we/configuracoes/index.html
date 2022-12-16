@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../../assets/img/engrenagem.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Configurações</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <header>
+          <h1>Configurações</h1>
+        </header>
+        <article>
+          <div>
+            <h5>Quantidade de participantes:</h5>
+            <input
+              type="number"
+              name="inputNumber"
+              id="qtdSorteados"
+              value="0"
+              placeholder="Participantes"
+              onchange="armazenarSorteados()"
+            />
+          </div>
+        </article>
+        <article>
+          <div style="height: 1px; width: 100%; background-color: #ddd"></div>
+        </article>
+        <article>
+          <div>
+            <h5>Quantidade de Sorteados:</h5>
+            <input
+              type="number"
+              name="inputNumber"
+              id="qtdSortear"
+              value="0"
+              placeholder="Sorteados"
+              onchange="qtdFields()"
+            />
+          </div>
+        </article>
+        <article>
+          <div style="height: 1px; width: 100%; background-color: #ddd"></div>
+        </article>
+        <section
+          id="brindes"
+          style="width: 100%; padding: 0px; margin: 0px"
+        ></section>
+        <article>
+          <div style="height: 1px; width: 100%; background-color: #ddd"></div>
+        </article>
+        <article>
+          <div>
+            <button onclick="mostrar()" id="btnSortear" style="width: 45vw">
+              mostrar
+            </button>
+            <button onclick="sortear()" id="btnSortear" style="width: 45vw">
+              Sortear
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <header>
+          <h1>Histórico</h1>
+        </header>
+        <article>
+          <span id="transacoes">Lista de transações</span>
+        </article>
+      </section>
+    </main>
+
+    <br />
+    <br />
+    <script
+      type="text/javascript"
+      src="../../assets/scripts/gerarSenha.js"
+    ></script>
+  </body>
+</html>
