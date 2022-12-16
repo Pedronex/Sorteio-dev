@@ -13,9 +13,10 @@ window.addEventListener("storage", function () {
     estrutura += '<article class="componente">';
     sorteados.forEach((item, index) => {
       estrutura += '<article class="conteudo">';
-      estrutura += `<span class="label" id="mostrarL">N° Sorteado</span>`;
+      estrutura += `<span class="numero">${item.brinde}</span>`;
+      estrutura += `<span class="label" id="mostrarL">N°</span>`;
       estrutura += `<span class="numero1" id="mostrarN">${
-        item.brinde < 10 ? "0" + item.brinde : item.brinde
+        item.numero < 10 ? "0" + item.numero : item.numero
       }</span>`;
       estrutura += "</article>";
     });
@@ -33,6 +34,8 @@ window.addEventListener("storage", function () {
 
   const participantes = historico[historico.length - 1].listaParticipantes;
   console.log(participantes);
+  const image = "https://assets7.lottiefiles.com/packages/lf20_5JBjfrVjZH.json";
+  console.log(image);
   if (apresentar == "true") {
     for (i = this.document.getElementsByClassName("numero1").length; i--; ) {
       this.document.getElementsByClassName("numero1").item(i).className =
@@ -40,14 +43,11 @@ window.addEventListener("storage", function () {
     }
   } else {
     for (i = this.document.getElementsByClassName("numero1").length; i--; ) {
-      const christmasBall =
-        "https://assets1.lottiefiles.com/packages/lf20_xaoat4zo.json";
       this.document
         .getElementsByClassName("numero1")
         .item(
           i
-        ).innerHTML = `<lottie-player src="${christmasBall}" background="transparent"  speed="2"  style="width: 150px; height: 150px;" loop autoplay></lottie-player>
-`;
+        ).innerHTML = `<lottie-player src="${image}"  background="transparent"  speed="1"  style="width: 100%; height: 150px"  loop autoplay></lottie-player>`;
     }
   }
 });
